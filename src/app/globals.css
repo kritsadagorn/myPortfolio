@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+body {
+  @apply p-0 m-0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: linear-gradient(135deg, #f6f6f6, e0e0e0);
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: "Jura";
+  src: url("/fonts/Jura-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-jura: "Jura", sans-serif;
+}
+
+.navButton {
+  @apply hidden md:block px-3 py-0.5 xl:px-5 xl:py-1.5 rounded-full text-base cursor-pointer;
+  @apply transition duration-300;
+  @apply border border-transparent hover:border-neutral-500;
+}
+
+.wrapperBtn{
+  @apply p-1 border-2 text-neutral-700 border-neutral-500/30 hover:border-neutral-500 rounded-xl transition duration-300 ease-in-out;
+}
