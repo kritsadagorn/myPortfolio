@@ -7,17 +7,8 @@ declare module "@glidejs/glide" {
     gap?: number;
     autoplay?: number | boolean;
     hoverpause?: boolean;
-    keyboard?: boolean;
     bound?: boolean;
-    swipeThreshold?: number | boolean;
-    dragThreshold?: number | boolean;
-    perTouch?: number | boolean;
-    touchRatio?: number;
-    touchAngle?: number;
     animationDuration?: number;
-    rewind?: boolean;
-    rewindDuration?: number;
-    animationTimingFunc?: string;
     direction?: "ltr" | "rtl";
     breakpoints?: Record<number, Partial<GlideOptions>>;
   }
@@ -27,7 +18,5 @@ declare module "@glidejs/glide" {
     mount(): this;
     destroy(): this;
     go(pattern: string): this;
-    on(event: string, handler: Function): this;
-    update(options: GlideOptions): this;
   }
 }
