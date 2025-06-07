@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../../assets/mainSection/PicWrapper.css";
+import Image from "next/image";
 
 // กำหนด interface สำหรับภาพ
 interface Image {
@@ -52,7 +53,7 @@ const PicWrapper: React.FC = () => {
             }}
             onClick={() => rotateCarousel(index)} // เปลี่ยนจากทิศทางคงที่เป็นส่ง index เป้าหมาย
           >
-            <img src={image.src} alt={image.alt} />
+            <Image src={image.src} alt={image.alt} />
           </div>
         ))}
       </div>
