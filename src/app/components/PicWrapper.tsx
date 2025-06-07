@@ -53,7 +53,7 @@ const PicWrapper: React.FC = () => {
             }}
             onClick={() => rotateCarousel(index)} // เปลี่ยนจากทิศทางคงที่เป็นส่ง index เป้าหมาย
           >
-            <Image src={image.src} alt={image.alt} />
+            <Image fill src={image.src} alt={image.alt} />
           </div>
         ))}
       </div>
