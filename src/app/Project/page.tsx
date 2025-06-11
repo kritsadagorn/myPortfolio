@@ -1,9 +1,7 @@
-import React from 'react'
+"use client"
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+import ProjectsPage from "@/components/Projects-page"
+
+export default function Page() {
+  return <ProjectsPage />
 }
-
-export default page
