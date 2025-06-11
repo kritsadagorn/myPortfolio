@@ -23,7 +23,7 @@ body {
 }
 
 .navButton {
-  @apply hidden md:block px-3 py-0.5 xl:px-5 xl:py-1.5 rounded-full text-base cursor-pointer;
+  @apply hidden md:block px-3 py-0.5 xl:px-5 xl:py-1.5 md:text-lg xl:text-xl rounded-full text-base cursor-pointer;
   @apply transition duration-300;
   @apply border border-transparent hover:border-neutral-500;
 }

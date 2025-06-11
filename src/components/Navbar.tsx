@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="md:hidden ml-10 mt-9 text-xl text-[#1a1a1a]">
         PORTFOLIO
       </div>
-      <div className="flex gap-3 xl:gap-10 mr-9 mt-10 text-xl text-[#575757]">
+      <div className="flex gap-3 xl:gap-10 mr-9 mt-10 text-xl xl:text-4xl text-[#575757]">
         <div className="navButton">Project</div>
         <div className="navButton">About</div>
         <div className="navButton">Contact</div>

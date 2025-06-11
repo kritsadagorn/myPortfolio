@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -19,9 +19,9 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
-        <footer className="flex justify-center items-center py-4">
+        {/* <footer className="flex justify-center items-center py-4">
           Footer
-        </footer>
+        </footer> */}
       </body>
     </html>
   );

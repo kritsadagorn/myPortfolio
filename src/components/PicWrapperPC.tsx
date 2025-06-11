@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "@glidejs/glide/dist/css/glide.theme.min.css";
 import { IoMdArrowDropright } from "react-icons/io";
 import { IoMdArrowDropleft } from "react-icons/io";
+import { TechTag, techTags } from "./data/TechTags";
 
 const PicWrapperPC: React.FC = () => {
   const glideRef = useRef<HTMLDivElement | null>(null);
@@ -39,9 +40,9 @@ const PicWrapperPC: React.FC = () => {
   return (
     <div
       ref={glideRef}
-      className="glide md:max-w-[600px] lg:max-w-[900px] my-0 mx-auto relative shadow-xl"
+      className="glide md:max-w-[600px] xl:max-w-[900px] my-0 mx-auto relative"
     >
-      <div className="glide__track" data-glide-el="track">
+      <div className="glide__track shadow-xl" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
             <img
@@ -54,20 +55,20 @@ const PicWrapperPC: React.FC = () => {
             <img
               src="/mainSection/RecentProgram2.png"
               alt="Slide 2"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto rounded-lg"
             />
           </li>
           <li className="glide__slide">
             <img
               src="/mainSection/RecentProgram3.png"
               alt="Slide 3"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto rounded-lg"
             />
           </li>
         </ul>
       </div>
       <div
-        className="glide__arrows absolute bottom-8 right-5 flex gap-2"
+        className="glide__arrows absolute bottom-21 right-6 flex gap-2"
         data-glide-el="controls"
       >
         <button className="wrapperBtn" data-glide-dir="<">
@@ -76,6 +77,28 @@ const PicWrapperPC: React.FC = () => {
         <button className="wrapperBtn" data-glide-dir=">">
           <IoMdArrowDropright />
         </button>
+      </div>
+      <div className="hidden md:block md:mt-5 text-xl">
+        <div>
+          main project - <span>positionExplorer</span>
+        </div>
+        <div className="flex gap-4 md:mt-1 lg:mt-3">
+          Tag :{" "}
+          {techTags.map((tag, i) => (
+            <div
+              key={i}
+              className={`xl:px-3 xl:py-[5px] md:px-2 md:py-1 rounded-tr-full rounded-br-full text-white text-lg ${tag.class}`}
+            >
+              {tag.label}
+            </div>
+          ))}
+        </div>
+        <div className="mt-2">
+          <span className="text-[17px]">
+            A site for exploring tools used in computer engineering roles, based
+            on job posting data.
+          </span>
+        </div>
       </div>
     </div>
   );

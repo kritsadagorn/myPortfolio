@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../../assets/mainSection/PicWrapper.css";
+import "../assets/mainSection/PicWrapper.css";
 import Image from "next/image";
+import { TechTag, techTags } from "./data/TechTags";
 
 // กำหนด interface สำหรับภาพ
 interface Image {
@@ -26,6 +27,7 @@ const PicWrapper: React.FC = () => {
     const shortestDirection =
       (diff + cellCount) % cellCount > cellCount / 2 ? diff - cellCount : diff;
     setRotationCount((prevCount: number) => prevCount + shortestDirection);
+    const radius = 140 / Math.tan(Math.PI / cellCount);
   };
 
   // คำนวณภาพปัจจุบัน
@@ -47,7 +49,7 @@ const PicWrapper: React.FC = () => {
             style={{
               transform: `rotateY(${
                 (360 / cellCount) * index
-              }deg) translateZ(150px)`,
+              }deg) translateZ(180px)`,
               opacity: index === currentIndex ? 1 : 0.5,
               cursor: "pointer",
             }}
