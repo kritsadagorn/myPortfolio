@@ -1,7 +1,7 @@
 import React from "react";
 import PicWrapper from "./PicWrapper";
 import PicWrapperPC from "./PicWrapperPC";
-import { TechTag, techTags } from "./data/TechTags";
+import { techTags } from "./data/TechTags";
 
 const Section = () => {
   return (
