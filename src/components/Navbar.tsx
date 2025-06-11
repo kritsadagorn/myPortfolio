@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FiAlignRight } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -8,12 +10,18 @@ const Navbar = () => {
         PORTFOLIO
       </div>
       <div className="flex gap-3 xl:gap-10 mr-9 mt-10 text-xl xl:text-4xl text-[#575757]">
-        <div className="navButton">Project</div>
-        <div className="navButton">About</div>
-        <div className="navButton">Contact</div>
-        <div className="md:hidden text-xl">
+        <Link href={"/Project"} className="navButton">
+          Project
+        </Link>
+        <Link href={"/About"} className="navButton">
+          About
+        </Link>
+        <Link href={"/Contact"} className="navButton">
+          Contact
+        </Link>
+        <Link href={"/"} className="md:hidden text-xl">
           <FiAlignRight />
-        </div>
+        </Link>
       </div>
     </nav>
   );

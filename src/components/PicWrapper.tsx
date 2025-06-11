@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/mainSection/PicWrapper.css";
 import Image from "next/image";
-import { TechTag, techTags } from "./data/TechTags";
 
 // กำหนด interface สำหรับภาพ
 interface Image {
