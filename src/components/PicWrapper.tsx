@@ -26,7 +26,6 @@ const PicWrapper: React.FC = () => {
     const shortestDirection =
       (diff + cellCount) % cellCount > cellCount / 2 ? diff - cellCount : diff;
     setRotationCount((prevCount: number) => prevCount + shortestDirection);
-    const radius = 140 / Math.tan(Math.PI / cellCount);
   };
 
   // คำนวณภาพปัจจุบัน
