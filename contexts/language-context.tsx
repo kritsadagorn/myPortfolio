@@ -1,0 +1,291 @@
+"use client"
+
+import type React from "react"
+import { createContext, useContext, useState, useEffect } from "react"
+
+type Language = "en" | "th"
+
+interface LanguageContextType {
+  language: Language
+  setLanguage: (lang: Language) => void
+  t: (key: string) => string
+}
+
+const translations = {
+  en: {
+    // Navigation
+    "nav.home": "Home",
+    "nav.projects": "Projects",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "nav.letsTalk": "Let's Talk",
+
+    // Homepage
+    "home.availableForWork": "Available for new opportunities",
+    "home.portfolio": "PORTFOLIO",
+    "home.name": "kritsadagorn purnapanich",
+    "home.intro": "Hi, I'm Jel — a 22-year-old Computer Engineering student at RMUTI.",
+    "home.description":
+      "I'm passionate about creating digital experiences that matter. From web applications to innovative solutions, I love turning ideas into reality through code.",
+    "home.viewProjects": "VIEW MY PROJECTS",
+    "home.downloadCV": "Download CV",
+    "home.projects": "Projects",
+    "home.yearsLearning": "Years Learning",
+    "home.passion": "Passion",
+    "home.whatIDo": "What I Do",
+    "home.whatIDoDesc":
+      "I specialize in creating end-to-end digital solutions with a focus on user experience and modern technologies.",
+    "home.recentWork": "Recent Work",
+    "home.recentWorkDesc": "Some of my latest projects and experiments",
+    "home.viewAllProjects": "View All Projects",
+    "home.ctaTitle": "Let's Build Something Amazing Together",
+    "home.ctaDesc":
+      "I'm always excited to work on new projects and collaborate with fellow creators. Let's discuss how we can bring your ideas to life.",
+    "home.startConversation": "Start a Conversation",
+    "home.learnMore": "Learn More About Me",
+
+    // Projects
+    "projects.title": "PROJECTS",
+    "projects.description":
+      "A collection of projects I've worked on, showcasing my skills in web development, software engineering, and problem-solving.",
+    "projects.featured": "Featured Project",
+    "projects.other": "Other Projects",
+    "projects.liveDemo": "Live Demo",
+    "projects.sourceCode": "Source Code",
+    "projects.demo": "Demo",
+
+    // About
+    "about.title": "ABOUT",
+    "about.hello": "Hello, I'm Kritsadagorn",
+    "about.intro1":
+      'I\'m a 22-year-old Computer Engineering student at RMUTI with an insatiable curiosity for technology and innovation. My journey in tech began with a simple question: "How does this work?" and has evolved into a passion for creating digital solutions that make a difference.',
+    "about.intro2":
+      "What drives me is the endless possibility of learning something new every day. Whether it's exploring a new framework, diving deep into algorithms, or understanding the latest industry trends, I'm always eager to expand my knowledge and skills.",
+    "about.intro3":
+      "I believe in the power of technology to solve real-world problems and create meaningful experiences. Through my projects, I strive to combine technical excellence with user-centered design.",
+    "about.quickFacts": "Quick Facts",
+    "about.age": "Age",
+    "about.location": "Location",
+    "about.education": "Education",
+    "about.field": "Field",
+    "about.interests": "Interests",
+    "about.skills": "Skills & Technologies",
+    "about.journey": "My Journey",
+
+    // Contact
+    "contact.title": "CONTACT",
+    "contact.description":
+      "Let's connect! Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you.",
+    "contact.sendMessage": "Send me a message",
+    "contact.name": "Name",
+    "contact.email": "Email",
+    "contact.subject": "Subject",
+    "contact.message": "Message",
+    "contact.messagePlaceholder": "Tell me about your project or just say hello...",
+    "contact.send": "SEND MESSAGE",
+    "contact.getInTouch": "Get in touch",
+    "contact.followMe": "Follow me",
+    "contact.availability": "Availability",
+    "contact.availableFreelance": "Available for freelance projects",
+    "contact.openCollaboration": "Open to collaboration",
+    "contact.acceptingOpportunities": "Accepting new opportunities",
+    "contact.responseTime": "Response time: Usually within 24 hours",
+
+    // Skills
+    "skills.frontend": "React, Next.js, TypeScript",
+    "skills.backend": "Node.js, Python, APIs",
+    "skills.design": "UI/UX, Figma, Prototyping",
+    "skills.fullstack": "End-to-end solutions",
+
+    // Project descriptions
+    "project.positionExplorer.desc":
+      "A comprehensive job search platform that helps users explore career opportunities with advanced filtering and insights.",
+    "project.taskManagement.title": "Task Management System",
+    "project.taskManagement.desc":
+      "A collaborative project management tool with real-time updates and team collaboration features.",
+    "project.ecommerce.title": "E-Commerce Platform",
+    "project.ecommerce.desc": "Full-stack e-commerce solution with payment integration and inventory management.",
+
+    // Timeline
+    "timeline.2024.title": "Final Year - RMUTI",
+    "timeline.2024.desc": "Focusing on advanced software engineering concepts and working on final year project",
+    "timeline.2023.title": "Full-Stack Development",
+    "timeline.2023.desc": "Started building complex web applications and learning modern development practices",
+    "timeline.2022.title": "Computer Engineering Student",
+    "timeline.2022.desc": "Began my journey in Computer Engineering at RMUTI, discovered passion for web development",
+    "timeline.2021.title": "Programming Foundations",
+    "timeline.2021.desc": "Started learning programming fundamentals and built my first simple applications",
+
+    // Skills categories
+    "category.frontend": "Frontend",
+    "category.backend": "Backend",
+    "category.language": "Language",
+    "category.database": "Database",
+    "category.framework": "Framework",
+
+    // About interests
+    "interest.webdev": "Web Development",
+    "interest.aiml": "AI/ML",
+    "interest.opensource": "Open Source",
+    "interest.uiux": "UI/UX Design",
+    "interest.cloud": "Cloud Computing",
+
+    // Location
+    "location.thailand": "Thailand",
+    "location.bangkok": "Bangkok, Thailand",
+    "field.computereng": "Computer Engineering",
+  },
+  th: {
+    // Navigation
+    "nav.home": "หน้าแรก",
+    "nav.projects": "โปรเจค",
+    "nav.about": "เกี่ยวกับ",
+    "nav.contact": "ติดต่อ",
+    "nav.letsTalk": "มาคุยกัน",
+
+    // Homepage
+    "home.availableForWork": "พร้อมรับงานใหม่",
+    "home.portfolio": "PORTFOLIO",
+    "home.name": "กฤษฎากร ปุณณปณิช",
+    "home.intro": "สวัสดีครับ ผม เจล — นักศึกษาวิศวกรรมคอมพิวเตอร์ อายุ 22 ปี จาก RMUTI",
+    "home.description":
+      "ผมหลงใหลในการสร้างประสบการณ์ดิจิทัลที่มีความหมาย ตั้งแต่เว็บแอปพลิเคชันไปจนถึงโซลูชันที่เป็นนวัตกรรม ผมชอบที่จะเปลี่ยนไอเดียให้กลายเป็นความจริงผ่านการเขียนโค้ด",
+    "home.viewProjects": "ดูผลงานของผม",
+    "home.downloadCV": "ดาวน์โหลด CV",
+    "home.projects": "โปรเจค",
+    "home.yearsLearning": "ปีแห่งการเรียนรู้",
+    "home.passion": "ความหลงใหล",
+    "home.whatIDo": "สิ่งที่ผมทำ",
+    "home.whatIDoDesc": "ผมเชี่ยวชาญในการสร้างโซลูชันดิจิทัลแบบครบวงจรโดยเน้นประสบการณ์ผู้ใช้และเทคโนโลยีสมัยใหม่",
+    "home.recentWork": "ผลงานล่าสุด",
+    "home.recentWorkDesc": "โปรเจคและการทดลองล่าสุดของผม",
+    "home.viewAllProjects": "ดูโปรเจคทั้งหมด",
+    "home.ctaTitle": "มาสร้างสิ่งที่ยอดเยี่ยมด้วยกัน",
+    "home.ctaDesc": "ผมตื่นเต้นเสมอที่จะทำงานในโปรเจคใหม่และร่วมมือกับเพื่อนนักสร้างสรรค์ มาคุยกันว่าเราจะทำให้ไอเดียของคุณเป็นจริงได้อย่างไร",
+    "home.startConversation": "เริ่มการสนทนา",
+    "home.learnMore": "เรียนรู้เพิ่มเติมเกี่ยวกับผม",
+
+    // Projects
+    "projects.title": "โปรเจค",
+    "projects.description": "คอลเลกชันของโปรเจคที่ผมได้ทำงานด้วย แสดงให้เห็นทักษะในการพัฒนาเว็บ วิศวกรรมซอฟต์แวร์ และการแก้ปัญหา",
+    "projects.featured": "โปรเจคเด่น",
+    "projects.other": "โปรเจคอื่นๆ",
+    "projects.liveDemo": "ดูเดโม",
+    "projects.sourceCode": "ซอร์สโค้ด",
+    "projects.demo": "เดโม",
+
+    // About
+    "about.title": "เกี่ยวกับ",
+    "about.hello": "สวัสดีครับ ผมกฤษฎากร",
+    "about.intro1":
+      'ผมเป็นนักศึกษาวิศวกรรมคอมพิวเตอร์อายุ 22 ปี จาก RMUTI ที่มีความอยากรู้อยากเห็นอย่างไม่รู้จักพอเพียงต่อเทคโนโลยีและนวัตกรรม การเดินทางของผมในโลกเทคเริ่มต้นด้วยคำถามง่ายๆ ว่า "สิ่งนี้ทำงานอย่างไร?" และได้พัฒนาเป็นความหลงใหลในการสร้างโซลูชันดิจิทัลที่สร้างความแตกต่าง',
+    "about.intro2":
+      "สิ่งที่ขับเคลื่อนผมคือความเป็นไปได้ไม่รู้จบในการเรียนรู้สิ่งใหม่ทุกวัน ไม่ว่าจะเป็นการสำรวจเฟรมเวิร์กใหม่ การเจาะลึกอัลกอริทึม หรือการทำความเข้าใจเทรนด์อุตสาหกรรมล่าสุด ผมมักจะกระตือรือร้นที่จะขยายความรู้และทักษะของตัวเอง",
+    "about.intro3":
+      "ผมเชื่อในพลังของเทคโนโลยีในการแก้ปัญหาในโลกแห่งความเป็นจริงและสร้างประสบการณ์ที่มีความหมาย ผ่านโปรเจคต่างๆ ของผม ผมมุ่งมั่นที่จะผสมผสานความเป็นเลิศทางเทคนิคเข้ากับการออกแบบที่เน้นผู้ใช้เป็นศูนย์กลาง",
+    "about.quickFacts": "ข้อมูลด่วน",
+    "about.age": "อายุ",
+    "about.location": "ที่อยู่",
+    "about.education": "การศึกษา",
+    "about.field": "สาขา",
+    "about.interests": "ความสนใจ",
+    "about.skills": "ทักษะและเทคโนโลยี",
+    "about.journey": "การเดินทางของผม",
+
+    // Contact
+    "contact.title": "ติดต่อ",
+    "contact.description": "มาเชื่อมต่อกัน! ไม่ว่าคุณจะมีโปรเจคในใจ ต้องการร่วมมือ หรือแค่อยากทักทาย ผมยินดีที่จะได้ยินจากคุณ",
+    "contact.sendMessage": "ส่งข้อความหาผม",
+    "contact.name": "ชื่อ",
+    "contact.email": "อีเมล",
+    "contact.subject": "หัวข้อ",
+    "contact.message": "ข้อความ",
+    "contact.messagePlaceholder": "บอกผมเกี่ยวกับโปรเจคของคุณหรือแค่ทักทาย...",
+    "contact.send": "ส่งข้อความ",
+    "contact.getInTouch": "ติดต่อผม",
+    "contact.followMe": "ติดตามผม",
+    "contact.availability": "สถานะ",
+    "contact.availableFreelance": "พร้อมรับงานฟรีแลนซ์",
+    "contact.openCollaboration": "เปิดรับการร่วมมือ",
+    "contact.acceptingOpportunities": "รับโอกาสใหม่",
+    "contact.responseTime": "เวลาตอบกลับ: โดยปกติภายใน 24 ชั่วโมง",
+
+    // Skills
+    "skills.frontend": "React, Next.js, TypeScript",
+    "skills.backend": "Node.js, Python, APIs",
+    "skills.design": "UI/UX, Figma, Prototyping",
+    "skills.fullstack": "โซลูชันครบวงจร",
+
+    // Project descriptions
+    "project.positionExplorer.desc": "แพลตฟอร์มค้นหางานที่ครอบคลุมซึ่งช่วยให้ผู้ใช้สำรวจโอกาสในการทำงานด้วยระบบกรองขั้นสูงและข้อมูลเชิงลึก",
+    "project.taskManagement.title": "ระบบจัดการงาน",
+    "project.taskManagement.desc": "เครื่องมือจัดการโปรเจคแบบร่วมมือกันพร้อมการอัปเดตแบบเรียลไทม์และคุณสมบัติการทำงานร่วมกันของทีม",
+    "project.ecommerce.title": "แพลตฟอร์มอีคอมเมิร์ซ",
+    "project.ecommerce.desc": "โซลูชันอีคอมเมิร์ซแบบครบวงจรพร้อมระบบชำระเงินและการจัดการสินค้าคงคลัง",
+
+    // Timeline
+    "timeline.2024.title": "ปีสุดท้าย - RMUTI",
+    "timeline.2024.desc": "เน้นแนวคิดวิศวกรรมซอฟต์แวร์ขั้นสูงและทำงานในโปรเจคปีสุดท้าย",
+    "timeline.2023.title": "การพัฒนา Full-Stack",
+    "timeline.2023.desc": "เริ่มสร้างเว็บแอปพลิเคชันที่ซับซ้อนและเรียนรู้แนวทางการพัฒนาสมัยใหม่",
+    "timeline.2022.title": "นักศึกษาวิศวกรรมคอมพิวเตอร์",
+    "timeline.2022.desc": "เริ่มต้นการเดินทางในวิศวกรรมคอมพิวเตอร์ที่ RMUTI ค้นพบความหลงใหลในการพัฒนาเว็บ",
+    "timeline.2021.title": "พื้นฐานการเขียนโปรแกรม",
+    "timeline.2021.desc": "เริ่มเรียนรู้พื้นฐานการเขียนโปรแกรมและสร้างแอปพลิเคชันง่ายๆ ครั้งแรก",
+
+    // Skills categories
+    "category.frontend": "Frontend",
+    "category.backend": "Backend",
+    "category.language": "ภาษา",
+    "category.database": "ฐานข้อมูล",
+    "category.framework": "Framework",
+
+    // About interests
+    "interest.webdev": "การพัฒนาเว็บ",
+    "interest.aiml": "AI/ML",
+    "interest.opensource": "โอเพ่นซอร์ส",
+    "interest.uiux": "UI/UX Design",
+    "interest.cloud": "Cloud Computing",
+
+    // Location
+    "location.thailand": "ประเทศไทย",
+    "location.bangkok": "กรุงเทพฯ ประเทศไทย",
+    "field.computereng": "วิศวกรรมคอมพิวเตอร์",
+  },
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguage] = useState<Language>("en")
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language") as Language
+    if (savedLanguage && (savedLanguage === "en" || savedLanguage === "th")) {
+      setLanguage(savedLanguage)
+    }
+  }, [])
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang)
+    localStorage.setItem("language", lang)
+  }
+
+  const t = (key: string): string => {
+    return translations[language][key as keyof (typeof translations)[typeof language]] || key
+  }
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  )
+}
+
+export function useLanguage() {
+  const context = useContext(LanguageContext)
+  if (context === undefined) {
+    throw new Error("useLanguage must be used within a LanguageProvider")
+  }
+  return context
+}
