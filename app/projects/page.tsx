@@ -22,7 +22,7 @@ export default function Projects() {
       id: 1,
       title: "Position Explorer",
       description: t("project.positionExplorer.desc"),
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/images/laptop-mockup.png",
       tags: ["React", "Node.js", "MySQL", "Express"],
       liveUrl: "https://positionexplorer.vercel.app",
       githubUrl: "https://github.com/kritsadagorn/FrontJob",

@@ -13,8 +13,7 @@ const jura = Jura({
 
 export const metadata: Metadata = {
   title: "Kritsadagorn Punnapanich - Portfolio",
-  description: "Computer Engineering student passionate about technology and web development",
-    generator: 'v0.dev'
+  description: "Computer Engineering student passionate about technology and web development"
 }
 
 export default function RootLayout({

@@ -137,10 +137,10 @@ const translations = {
   th: {
     // Navigation
     "nav.home": "หน้าแรก",
-    "nav.projects": "โปรเจค",
+    "nav.projects": "โปรเจกต์",
     "nav.about": "เกี่ยวกับ",
     "nav.contact": "ติดต่อ",
-    "nav.letsTalk": "มาคุยกัน",
+    "nav.letsTalk": "ชักชวน",
 
     // Homepage
     "home.availableForWork": "พร้อมรับงานใหม่",
@@ -159,10 +159,10 @@ const translations = {
     "home.recentWork": "ผลงานล่าสุด",
     "home.recentWorkDesc": "โปรเจกต์ล่าสุดของผม",
     "home.viewAllProjects": "ดูโปรเจกต์ทั้งหมด",
-    "home.ctaTitle": "ผมอยากที่จะ เรียนรู้ สิ่งใหม่ๆจากทุกๆแหล่ง",
-    "home.ctaDesc": "ผมตื่นเต้นเสมอที่จะทำงานในโปรเจคใหม่และร่วมมือกับเพื่อนนักสร้างสรรค์ มาคุยกันว่าเราจะทำให้ไอเดียของคุณเป็นจริงได้อย่างไร",
-    "home.startConversation": "เริ่มการสนทนา",
-    "home.learnMore": "เรียนรู้เพิ่มเติมเกี่ยวกับผม",
+    "home.ctaTitle": "ผมอยาก ที่จะ เรียนรู้ สิ่งใหม่ๆ จาก ทุกๆแหล่ง",
+    "home.ctaDesc": "ผมตื่นเต้นเสมอที่จะทำงานในโปรเจกต์ใหม่และร่วมมือกับคนอื่นๆ สนุกทุกครั้งที่จะได้เรียนเรื่องใหม่ๆ หลายสถานการณ์ หลายสถานที่",
+    "home.startConversation": "ช่องทางการติดต่อ",
+    "home.learnMore": "เกี่ยวกับผม",
 
     // Projects
     "projects.title": "โปรเจกต์",
@@ -216,11 +216,11 @@ const translations = {
     "skills.etc.": "ผมหลงไหลในเสียงดนตรีมากจริงๆ",
 
     // Project descriptions
-    "project.positionExplorer.desc": "แพลตฟอร์มค้นหางานที่ครอบคลุมซึ่งช่วยให้ผู้ใช้สำรวจโอกาสในการทำงานด้วยระบบกรองขั้นสูงและข้อมูลเชิงลึก",
-    "project.shabu.title": "ระบบจัดการงาน",
-    "project.shabu.desc": "เครื่องมือจัดการโปรเจคแบบร่วมมือกันพร้อมการอัปเดตแบบเรียลไทม์และคุณสมบัติการทำงานร่วมกันของทีม",
-    "project.parking.title": "แพลตฟอร์มอีคอมเมิร์ซ",
-    "project.parking.desc": "โซลูชันอีคอมเมิร์ซแบบครบวงจรพร้อมระบบชำระเงินและการจัดการสินค้าคงคลัง",
+    "project.positionExplorer.desc": "เว็บไซต์วิเคราะห์ข้อมูลการรับสมัครงาน เพื่อนำเสนอเครื่องมือยอดนิยมในแต่ละตำแหน่ง",
+    "project.shabu.title": "ShabuShabu",
+    "project.shabu.desc": "เว็บไซต์สั่งอาหารร้านชาบู และระบบดูแลหลังร้าน (CRUD)",
+    "project.parking.title": "Parking Reservation",
+    "project.parking.desc": "เว็บไซต์จองที่จอดรถ ของมหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา ณ ตึกศึกษาทั่วไป",
 
     // Timeline
     "timeline.2024.title": "ปีสุดท้าย - RMUTL",

@@ -30,7 +30,7 @@ export default function Homepage() {
       title: "Position Explorer",
       description: t("project.positionExplorer.desc"),
       tags: ["React", "Node.js", "Express","MySQL"],
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/images/laptop-mockup.png",
     },
     {
       title: t("project.shabu.title"),
@@ -171,7 +171,7 @@ export default function Homepage() {
                   </p>
 
                   <div className="flex flex-wrap gap-2">
-                    {["React", "Node.js", "MongoDB", "Express"].map((tag) => (
+                    {["React", "Node.js", "MySQL", "Express"].map((tag) => (
                       <Badge
                         key={tag}
                         variant="secondary"
