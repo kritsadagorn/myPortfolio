@@ -12,7 +12,7 @@ const jura = Jura({
 })
 
 export const metadata: Metadata = {
-  title: "Kritsadagorn Purnapanich - Portfolio",
+  title: "Kritsadagorn Punnapanich - Portfolio",
   description: "Computer Engineering student passionate about technology and web development",
     generator: 'v0.dev'
 }

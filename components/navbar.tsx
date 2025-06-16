@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LanguageToggle } from "@/components/language-toggle"
@@ -56,10 +56,10 @@ export function Navbar() {
             {/* Logo/Brand */}
             <Link href="/" className="flex items-center space-x-2 group" onClick={handleNavClick}>
               <div className="w-8 h-8 bg-gradient-to-br from-gray-900 to-gray-600 dark:from-gray-100 dark:to-gray-300 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                <span className="text-white dark:text-gray-900 font-bold text-sm">{language === "en" ? "K" : "ก"}</span>
+                <span className="text-white dark:text-gray-900 font-bold text-sm">{language === "en" ? "Jai" : "ไจ๋"}</span>
               </div>
               <span className="font-medium text-gray-900 dark:text-gray-100 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors tracking-wide">
-                {language === "en" ? "Kritsadagorn" : "กฤษฎากร"}
+                {language === "en" ? "Portfolio" : "แฟ้มสะสมผลงาน"}
               </span>
             </Link>
 
@@ -94,12 +94,6 @@ export function Navbar() {
                   className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-200"
                 >
                   <Github className="w-4 h-4" />
-                </a>
-                <a
-                  href="#"
-                  className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-200"
-                >
-                  <Linkedin className="w-4 h-4" />
                 </a>
               </div>
               <Button

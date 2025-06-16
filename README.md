@@ -54,7 +54,7 @@ A modern, responsive portfolio website built with Next.js 15, featuring bilingua
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 portfolio-website/
 ├── app/                          # Next.js App Router
 │   ├── globals.css              # Global styles
@@ -79,7 +79,7 @@ portfolio-website/
 ├── lib/                         # Utility functions
 │   └── utils.ts                # Tailwind utilities
 └── README.md                    # Project documentation
-\`\`\`
+```
 
 ## 🚀 Getting Started
 
@@ -90,37 +90,37 @@ portfolio-website/
 ### **Installation**
 
 1. **Clone the repository**
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/portfolio-website.git
 cd portfolio-website
-\`\`\`
+```
 
 2. **Install dependencies**
-\`\`\`bash
+```bash
 npm install
 # or
 yarn install
 # or
 pnpm install
-\`\`\`
+```
 
 3. **Run the development server**
-\`\`\`bash
+```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-\`\`\`
+```
 
 4. **Open your browser**
 Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### **Build for Production**
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## 🌍 Language System
 
@@ -137,24 +137,24 @@ The website supports English and Thai languages with a comprehensive translation
 2. Add new keys to both `en` and `th` objects
 3. Use `t("your.key")` in components
 
-\`\`\`typescript
+```typescript
 // Example usage
 const { t } = useLanguage()
 return <h1>{t("page.title")}</h1>
-\`\`\`
+```
 
 ## 🎨 Theming & Customization
 
 ### **Colors**
 The project uses a neutral color palette with CSS variables for easy customization:
 
-\`\`\`css
+```css
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
   /* Add your custom colors */
 }
-\`\`\`
+```
 
 ### **Dark Mode**
 Dark mode is implemented using `next-themes`:
@@ -242,12 +242,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Kritsadagorn Purnapanich (Jel)**
+**Kritsadagorn Punnapanich (Jai)**
 - 🎓 Computer Engineering Student at RMUTI
 - 💼 Passionate Full-Stack Developer
 - 🌐 Portfolio: [Your Website URL]
 - 📧 Email: kritsadagorn@example.com
-- 💼 LinkedIn: [Your LinkedIn]
 - 🐙 GitHub: [Your GitHub]
 
 ## 🙏 Acknowledgments

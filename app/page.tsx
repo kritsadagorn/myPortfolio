@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Navbar } from "@/components/navbar"
-import { ArrowRight, Download, ExternalLink, Github, Code, Palette, Database, Globe } from "lucide-react"
+import { ArrowRight, Download, ExternalLink, Github, Code, Palette, Database, Heart } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -14,7 +14,7 @@ const skills = [
   { name: "Frontend", icon: Code, color: "from-blue-500 to-cyan-500" },
   { name: "Backend", icon: Database, color: "from-green-500 to-emerald-500" },
   { name: "Design", icon: Palette, color: "from-purple-500 to-pink-500" },
-  { name: "Full-Stack", icon: Globe, color: "from-orange-500 to-red-500" },
+  { name: "Etc.", icon: Heart, color: "from-orange-500 to-red-500" },
 ]
 
 export default function Homepage() {
@@ -29,19 +29,19 @@ export default function Homepage() {
     {
       title: "Position Explorer",
       description: t("project.positionExplorer.desc"),
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["React", "Node.js", "Express","MySQL"],
       image: "/placeholder.svg?height=200&width=300",
     },
     {
-      title: t("project.taskManagement.title"),
-      description: t("project.taskManagement.desc"),
-      tags: ["Next.js", "TypeScript", "PostgreSQL"],
+      title: t("project.shabu.title"),
+      description: t("project.shabu.desc"),
+      tags: ["PHP", "MySQL"],
       image: "/placeholder.svg?height=200&width=300",
     },
     {
-      title: t("project.ecommerce.title"),
-      description: t("project.ecommerce.desc"),
-      tags: ["React", "Python", "Django"],
+      title: t("project.parking.title"),
+      description: t("project.parking.desc"),
+      tags: ["React","Node.js","MySQL"],
       image: "/placeholder.svg?height=200&width=300",
     },
   ]
@@ -113,7 +113,7 @@ export default function Homepage() {
             {/* Quick Stats */}
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">15+</div>
+                <div className="text-2xl font-bold text-gray-900 dark:text-gray-100">3+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">{t("home.projects")}</div>
               </div>
               <div className="text-center">
@@ -137,7 +137,7 @@ export default function Homepage() {
                 <div className="relative">
                   <Image
                     src="/images/laptop-mockup.png"
-                    alt="Position Explorer project on laptop"
+                    alt="Position Explorer project"
                     width={600}
                     height={400}
                     className="w-full h-auto group-hover:scale-110 transition-transform duration-700"
@@ -399,7 +399,7 @@ export default function Homepage() {
                 className="group relative overflow-hidden border-2 border-white/30 dark:border-gray-900/30 text-white dark:text-gray-900 hover:bg-white/10 dark:hover:bg-gray-900/10 px-8 py-4 rounded-full text-base font-medium transition-all duration-300 hover:border-white/60 dark:hover:border-gray-900/60 hover:shadow-xl"
               >
                 <Link href="/about">
-                  <span className="relative z-10 flex items-center">
+                  <span className="relative z-10 flex items-center text-black">
                     {t("home.learnMore")}
                     <svg
                       className="w-5 h-5 ml-2 group-hover:rotate-12 transition-transform duration-300"
@@ -435,8 +435,8 @@ export default function Homepage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-white dark:text-gray-900 font-medium mb-1">Fast Delivery</h3>
-                  <p className="text-gray-300 dark:text-gray-600 text-sm">Quick turnaround times</p>
+                  <h3 className="text-white dark:text-gray-900 font-medium mb-1">Explore Together</h3>
+                  <p className="text-gray-300 dark:text-gray-600 text-sm">Enjoy experimenting with new things</p>
                 </div>
 
                 <div className="group text-center">
@@ -450,8 +450,8 @@ export default function Homepage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-white dark:text-gray-900 font-medium mb-1">Quality Code</h3>
-                  <p className="text-gray-300 dark:text-gray-600 text-sm">Clean & maintainable</p>
+                  <h3 className="text-white dark:text-gray-900 font-medium mb-1">Learning through dev</h3>
+                  <p className="text-gray-300 dark:text-gray-600 text-sm">Gain new insights throughout the development process</p>
                 </div>
 
                 <div className="group text-center">

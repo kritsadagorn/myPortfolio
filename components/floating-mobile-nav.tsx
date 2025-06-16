@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Github, Linkedin, Mail } from "lucide-react"
+import { Menu, X, Github, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -65,12 +65,7 @@ export function FloatingMobileNav() {
                 >
                   <Github className="w-4 h-4" />
                 </a>
-                <a
-                  href="#"
-                  className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
+
               </div>
               <Button
                 asChild

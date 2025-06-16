@@ -17,14 +17,13 @@ export default function About() {
   }, [])
 
   const skillsUpdated = [
-    { name: "React", level: 90, category: t("category.frontend"), color: "from-blue-500 to-cyan-500" },
-    { name: "Node.js", level: 85, category: t("category.backend"), color: "from-green-500 to-emerald-500" },
-    { name: "TypeScript", level: 80, category: t("category.language"), color: "from-blue-600 to-indigo-600" },
-    { name: "Python", level: 75, category: t("category.language"), color: "from-yellow-500 to-orange-500" },
-    { name: "MongoDB", level: 80, category: t("category.database"), color: "from-green-600 to-teal-600" },
-    { name: "PostgreSQL", level: 70, category: t("category.database"), color: "from-blue-700 to-purple-700" },
-    { name: "Next.js", level: 85, category: t("category.framework"), color: "from-gray-800 to-gray-600" },
-    { name: "Express.js", level: 80, category: t("category.backend"), color: "from-gray-700 to-gray-500" },
+    { name: "React", level: 70, category: t("category.frontend"), color: "from-blue-500 to-cyan-500" },
+    { name: "Node.js", level: 60, category: t("category.backend"), color: "from-green-500 to-emerald-500" },
+    { name: "Express.js", level: 60, category: t("category.backend"), color: "from-gray-700 to-gray-500" },
+    { name: "Next.js", level: 50, category: t("category.framework"), color: "from-gray-800 to-gray-600" },
+    { name: "Python", level: 50, category: t("category.language"), color: "from-yellow-500 to-orange-500" },
+    { name: "TypeScript", level: 30, category: t("category.language"), color: "from-blue-600 to-indigo-600" },
+    { name: "MongoDB", level: 20, category: t("category.database"), color: "from-green-600 to-teal-600" },
   ]
 
   const timelineUpdated = [

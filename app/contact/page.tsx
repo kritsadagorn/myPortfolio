@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Send, Clock, CheckCircle } from "lucide-react"
+import { Mail, MapPin, Phone, Github, Twitter, Send, Clock, CheckCircle } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { useLanguage } from "@/contexts/language-context"
 import { useEffect, useState } from "react"
@@ -58,14 +58,6 @@ export default function Contact() {
       label: "GitHub",
       value: "github.com/kritsadagorn",
       color: "from-gray-700 to-gray-900",
-      href: "#",
-    },
-    {
-      id: "linkedin",
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/kritsadagorn",
-      color: "from-blue-600 to-blue-800",
       href: "#",
     },
     {

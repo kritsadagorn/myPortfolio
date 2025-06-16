@@ -23,10 +23,9 @@ const translations = {
     // Homepage
     "home.availableForWork": "Available for new opportunities",
     "home.portfolio": "PORTFOLIO",
-    "home.name": "kritsadagorn purnapanich",
-    "home.intro": "Hi, I'm Jel — a 22-year-old Computer Engineering student at RMUTI.",
-    "home.description":
-      "I'm passionate about creating digital experiences that matter. From web applications to innovative solutions, I love turning ideas into reality through code.",
+    "home.name": "Kritsadagorn Punnapanich",
+    "home.intro": "Hi, I'm Jai — 22 Years old Computer Engineering student at Rajamangala University Of Technology Lanna.",
+    "home.description":"I'm really into learning new stuff — especially anything tech-related. Always up for discovering something new!",
     "home.viewProjects": "VIEW MY PROJECTS",
     "home.downloadCV": "Download CV",
     "home.projects": "Projects",
@@ -34,20 +33,20 @@ const translations = {
     "home.passion": "Passion",
     "home.whatIDo": "What I Do",
     "home.whatIDoDesc":
-      "I specialize in creating end-to-end digital solutions with a focus on user experience and modern technologies.",
+      "I'm exploring various fields, especially in technology, and I always enjoy learning and embracing new ideas.",
     "home.recentWork": "Recent Work",
     "home.recentWorkDesc": "Some of my latest projects and experiments",
     "home.viewAllProjects": "View All Projects",
-    "home.ctaTitle": "Let's Build Something Amazing Together",
+    "home.ctaTitle": "I want to learn everything from you.",
     "home.ctaDesc":
-      "I'm always excited to work on new projects and collaborate with fellow creators. Let's discuss how we can bring your ideas to life.",
+      "I’m a recent graduate excited to grow as a developer, learn from real-world projects, and collaborate with experienced teams.",
     "home.startConversation": "Start a Conversation",
     "home.learnMore": "Learn More About Me",
 
     // Projects
     "projects.title": "PROJECTS",
     "projects.description":
-      "A collection of projects I've worked on, showcasing my skills in web development, software engineering, and problem-solving.",
+      "Here are the projects I have been involved in. Throughout the process, I gained valuable experience in web development and problem-solving.",
     "projects.featured": "Featured Project",
     "projects.other": "Other Projects",
     "projects.liveDemo": "Live Demo",
@@ -92,19 +91,19 @@ const translations = {
     "contact.responseTime": "Response time: Usually within 24 hours",
 
     // Skills
-    "skills.frontend": "React, Next.js, TypeScript",
+    "skills.frontend": "React, Next.js, Javascript",
     "skills.backend": "Node.js, Python, APIs",
-    "skills.design": "UI/UX, Figma, Prototyping",
-    "skills.fullstack": "End-to-end solutions",
+    "skills.design": "Figma, Canva",
+    "skills.etc.": "I'm REALLY into music",
 
     // Project descriptions
     "project.positionExplorer.desc":
       "A comprehensive job search platform that helps users explore career opportunities with advanced filtering and insights.",
-    "project.taskManagement.title": "Task Management System",
-    "project.taskManagement.desc":
+    "project.shabu.title": "Food ordering website for shabu restaurant",
+    "project.shabu.desc":
       "A collaborative project management tool with real-time updates and team collaboration features.",
-    "project.ecommerce.title": "E-Commerce Platform",
-    "project.ecommerce.desc": "Full-stack e-commerce solution with payment integration and inventory management.",
+    "project.parking.title": "University Parking Reservation System",
+    "project.parking.desc": "Full-stack e-commerce solution with payment integration and inventory management.",
 
     // Timeline
     "timeline.2024.title": "Final Year - RMUTI",
@@ -146,33 +145,33 @@ const translations = {
     // Homepage
     "home.availableForWork": "พร้อมรับงานใหม่",
     "home.portfolio": "PORTFOLIO",
-    "home.name": "กฤษฎากร ปุณณปณิช",
-    "home.intro": "สวัสดีครับ ผม เจล — นักศึกษาวิศวกรรมคอมพิวเตอร์ อายุ 22 ปี จาก RMUTI",
+    "home.name": "กฤษฎากรณ์ ปุนนพานิช",
+    "home.intro": "สวัสดีครับ ผม ไจ๋ — นักศึกษาวิศวกรรมคอมพิวเตอร์ อายุ 22 ปี จากมหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา เชียงใหม่",
     "home.description":
-      "ผมหลงใหลในการสร้างประสบการณ์ดิจิทัลที่มีความหมาย ตั้งแต่เว็บแอปพลิเคชันไปจนถึงโซลูชันที่เป็นนวัตกรรม ผมชอบที่จะเปลี่ยนไอเดียให้กลายเป็นความจริงผ่านการเขียนโค้ด",
-    "home.viewProjects": "ดูผลงานของผม",
+      "ผมกำลังเรียนรู้ในหลายๆสิ่ง ทั้งที่เกี่ยวกับเทคโนโลยีและอื่นๆ ผมชอบที่จะได้เรียนรู้และรับฟังสิ่งใหม่ๆเสมอ",
+    "home.viewProjects": "ผลงาน",
     "home.downloadCV": "ดาวน์โหลด CV",
-    "home.projects": "โปรเจค",
-    "home.yearsLearning": "ปีแห่งการเรียนรู้",
-    "home.passion": "ความหลงใหล",
-    "home.whatIDo": "สิ่งที่ผมทำ",
-    "home.whatIDoDesc": "ผมเชี่ยวชาญในการสร้างโซลูชันดิจิทัลแบบครบวงจรโดยเน้นประสบการณ์ผู้ใช้และเทคโนโลยีสมัยใหม่",
+    "home.projects": "โปรเจกต์",
+    "home.yearsLearning": "ปีที่เรียนรู้",
+    "home.passion": "แพชชั่น",
+    "home.whatIDo": "ความสามารถ",
+    "home.whatIDoDesc": "ผมกำลังสำรวจและเรียนรู้ในหลากหลายด้าน โดยเฉพาะในสายเทคโนโลยี และผมมีความสนุกกับการเปิดรับแนวคิดใหม่ๆ อยู่เสมอ",
     "home.recentWork": "ผลงานล่าสุด",
-    "home.recentWorkDesc": "โปรเจคและการทดลองล่าสุดของผม",
-    "home.viewAllProjects": "ดูโปรเจคทั้งหมด",
-    "home.ctaTitle": "มาสร้างสิ่งที่ยอดเยี่ยมด้วยกัน",
+    "home.recentWorkDesc": "โปรเจกต์ล่าสุดของผม",
+    "home.viewAllProjects": "ดูโปรเจกต์ทั้งหมด",
+    "home.ctaTitle": "ผมอยากที่จะ เรียนรู้ สิ่งใหม่ๆจากทุกๆแหล่ง",
     "home.ctaDesc": "ผมตื่นเต้นเสมอที่จะทำงานในโปรเจคใหม่และร่วมมือกับเพื่อนนักสร้างสรรค์ มาคุยกันว่าเราจะทำให้ไอเดียของคุณเป็นจริงได้อย่างไร",
     "home.startConversation": "เริ่มการสนทนา",
     "home.learnMore": "เรียนรู้เพิ่มเติมเกี่ยวกับผม",
 
     // Projects
-    "projects.title": "โปรเจค",
-    "projects.description": "คอลเลกชันของโปรเจคที่ผมได้ทำงานด้วย แสดงให้เห็นทักษะในการพัฒนาเว็บ วิศวกรรมซอฟต์แวร์ และการแก้ปัญหา",
-    "projects.featured": "โปรเจคเด่น",
-    "projects.other": "โปรเจคอื่นๆ",
-    "projects.liveDemo": "ดูเดโม",
-    "projects.sourceCode": "ซอร์สโค้ด",
-    "projects.demo": "เดโม",
+    "projects.title": "โปรเจกต์",
+    "projects.description": "นี่คือรายการโปรเจกต์ที่ผมได้มีส่วนร่วมในการพัฒนา และได้เกิดการเรียนรู้ระหว่างทางการทำงาน ทั้งด้านการพัฒนาเว็บไซต์ และกระบวนการแก้ปัญหา",
+    "projects.featured": "โปรเจกต์ที่ผมภูมิใจ",
+    "projects.other": "โปรเจกต์อื่นๆ",
+    "projects.liveDemo": "View",
+    "projects.sourceCode": "Source Code",
+    "projects.demo": "View",
 
     // About
     "about.title": "เกี่ยวกับ",
@@ -211,20 +210,20 @@ const translations = {
     "contact.responseTime": "เวลาตอบกลับ: โดยปกติภายใน 24 ชั่วโมง",
 
     // Skills
-    "skills.frontend": "React, Next.js, TypeScript",
+    "skills.frontend": "React, Node.js, Javascript",
     "skills.backend": "Node.js, Python, APIs",
-    "skills.design": "UI/UX, Figma, Prototyping",
-    "skills.fullstack": "โซลูชันครบวงจร",
+    "skills.design": "Figma, Canva",
+    "skills.etc.": "ผมหลงไหลในเสียงดนตรีมากจริงๆ",
 
     // Project descriptions
     "project.positionExplorer.desc": "แพลตฟอร์มค้นหางานที่ครอบคลุมซึ่งช่วยให้ผู้ใช้สำรวจโอกาสในการทำงานด้วยระบบกรองขั้นสูงและข้อมูลเชิงลึก",
-    "project.taskManagement.title": "ระบบจัดการงาน",
-    "project.taskManagement.desc": "เครื่องมือจัดการโปรเจคแบบร่วมมือกันพร้อมการอัปเดตแบบเรียลไทม์และคุณสมบัติการทำงานร่วมกันของทีม",
-    "project.ecommerce.title": "แพลตฟอร์มอีคอมเมิร์ซ",
-    "project.ecommerce.desc": "โซลูชันอีคอมเมิร์ซแบบครบวงจรพร้อมระบบชำระเงินและการจัดการสินค้าคงคลัง",
+    "project.shabu.title": "ระบบจัดการงาน",
+    "project.shabu.desc": "เครื่องมือจัดการโปรเจคแบบร่วมมือกันพร้อมการอัปเดตแบบเรียลไทม์และคุณสมบัติการทำงานร่วมกันของทีม",
+    "project.parking.title": "แพลตฟอร์มอีคอมเมิร์ซ",
+    "project.parking.desc": "โซลูชันอีคอมเมิร์ซแบบครบวงจรพร้อมระบบชำระเงินและการจัดการสินค้าคงคลัง",
 
     // Timeline
-    "timeline.2024.title": "ปีสุดท้าย - RMUTI",
+    "timeline.2024.title": "ปีสุดท้าย - RMUTL",
     "timeline.2024.desc": "เน้นแนวคิดวิศวกรรมซอฟต์แวร์ขั้นสูงและทำงานในโปรเจคปีสุดท้าย",
     "timeline.2023.title": "การพัฒนา Full-Stack",
     "timeline.2023.desc": "เริ่มสร้างเว็บแอปพลิเคชันที่ซับซ้อนและเรียนรู้แนวทางการพัฒนาสมัยใหม่",
