@@ -57,6 +57,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-jura)", "system-ui", "sans-serif"],
         jura: ["var(--font-jura)", "system-ui", "sans-serif"],
+        kanit: ["var(--font-kanit)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

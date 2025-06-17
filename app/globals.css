@@ -4,6 +4,7 @@
 
 :root {
   --font-jura: "Jura", system-ui, sans-serif;
+  --font-kanit: "Kanit", system-ui, sans-serif;
 }
 
 html {
@@ -11,7 +12,12 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jura);
+}
+
+/* Thai language font */
+body[data-lang="th"] {
+  font-family: var(--font-kanit);
 }
 
 @layer utilities {
@@ -37,6 +43,14 @@ body {
 
   .font-bold-jura {
     font-weight: 700;
+  }
+
+  .font-kanit {
+    font-family: var(--font-kanit);
+  }
+
+  .font-jura {
+    font-family: var(--font-jura);
   }
 }
 

@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Jura } from "next/font/google"
+import { Jura, Kanit } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
@@ -11,9 +11,15 @@ const jura = Jura({
   variable: "--font-jura",
 })
 
+const kanit = Kanit({
+  subsets: ["latin", "thai"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-kanit",
+})
+
 export const metadata: Metadata = {
   title: "Kritsadagorn Punnapanich - Portfolio",
-  description: "Computer Engineering student passionate about technology and web development"
+  description: "Computer Engineering student passionate about technology and web development",
 }
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={jura.className} style={{ scrollBehavior: "smooth" }}>
+      <body className={`${jura.variable} ${kanit.variable}`} style={{ scrollBehavior: "smooth" }}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange={false}>
           <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>

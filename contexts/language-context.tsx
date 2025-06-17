@@ -24,8 +24,10 @@ const translations = {
     "home.availableForWork": "Available for new opportunities",
     "home.portfolio": "PORTFOLIO",
     "home.name": "Kritsadagorn Punnapanich",
-    "home.intro": "Hi, I'm Jai — 22 Years old Computer Engineering student at Rajamangala University Of Technology Lanna.",
-    "home.description":"I'm really into learning new stuff — especially anything tech-related. Always up for discovering something new!",
+    "home.intro":
+      "Hi, I'm Jai — 22 Years old Computer Engineering student at Rajamangala University Of Technology Lanna.",
+    "home.description":
+      "I'm really into learning new stuff — especially anything tech-related. Always up for discovering something new!",
     "home.viewProjects": "VIEW MY PROJECTS",
     "home.downloadCV": "Download CV",
     "home.projects": "Projects",
@@ -39,7 +41,7 @@ const translations = {
     "home.viewAllProjects": "View All Projects",
     "home.ctaTitle": "I want to learn everything from you.",
     "home.ctaDesc":
-      "I’m a recent graduate excited to grow as a developer, learn from real-world projects, and collaborate with experienced teams.",
+      "I'm a recent graduate excited to grow as a developer, learn from real-world projects, and collaborate with experienced teams.",
     "home.startConversation": "Start a Conversation",
     "home.learnMore": "Learn More About Me",
 
@@ -147,15 +149,15 @@ const translations = {
     "home.portfolio": "PORTFOLIO",
     "home.name": "กฤษฎากรณ์ ปุนนพานิช",
     "home.intro": "สวัสดีครับ ผม ไจ๋ — นักศึกษาวิศวกรรมคอมพิวเตอร์ อายุ 22 ปี จากมหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา เชียงใหม่",
-    "home.description":
-      "ผมกำลังเรียนรู้ในหลายๆสิ่ง ทั้งที่เกี่ยวกับเทคโนโลยีและอื่นๆ ผมชอบที่จะได้เรียนรู้และรับฟังสิ่งใหม่ๆเสมอ",
+    "home.description": "ผมกำลังเรียนรู้ในหลายๆสิ่ง ทั้งที่เกี่ยวกับเทคโนโลยีและอื่นๆ ผมชอบที่จะได้เรียนรู้และรับฟังสิ่งใหม่ๆเสมอ",
     "home.viewProjects": "ผลงาน",
     "home.downloadCV": "ดาวน์โหลด CV",
     "home.projects": "โปรเจกต์",
     "home.yearsLearning": "ปีที่เรียนรู้",
     "home.passion": "แพชชั่น",
     "home.whatIDo": "ความสามารถ",
-    "home.whatIDoDesc": "ผมกำลังสำรวจและเรียนรู้ในหลากหลายด้าน โดยเฉพาะในสายเทคโนโลยี และผมมีความสนุกกับการเปิดรับแนวคิดใหม่ๆ อยู่เสมอ",
+    "home.whatIDoDesc":
+      "ผมกำลังสำรวจและเรียนรู้ในหลากหลายด้าน โดยเฉพาะในสายเทคโนโลยี และผมมีความสนุกกับการเปิดรับแนวคิดใหม่ๆ อยู่เสมอ",
     "home.recentWork": "ผลงานล่าสุด",
     "home.recentWorkDesc": "โปรเจกต์ล่าสุดของผม",
     "home.viewAllProjects": "ดูโปรเจกต์ทั้งหมด",
@@ -166,7 +168,8 @@ const translations = {
 
     // Projects
     "projects.title": "โปรเจกต์",
-    "projects.description": "นี่คือรายการโปรเจกต์ที่ผมได้มีส่วนร่วมในการพัฒนา และได้เกิดการเรียนรู้ระหว่างทางการทำงาน ทั้งด้านการพัฒนาเว็บไซต์ และกระบวนการแก้ปัญหา",
+    "projects.description":
+      "นี่คือรายการโปรเจกต์ที่ผมได้มีส่วนร่วมในการพัฒนา และได้เกิดการเรียนรู้ระหว่างทางการทำงาน ทั้งด้านการพัฒนาเว็บไซต์ และกระบวนการแก้ปัญหา",
     "projects.featured": "โปรเจกต์ที่ผมภูมิใจ",
     "projects.other": "โปรเจกต์อื่นๆ",
     "projects.liveDemo": "View",
@@ -264,6 +267,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       setLanguage(savedLanguage)
     }
   }, [])
+
+  useEffect(() => {
+    // Apply font based on language
+    document.body.setAttribute("data-lang", language)
+    if (language === "th") {
+      document.body.style.fontFamily = "var(--font-kanit)"
+    } else {
+      document.body.style.fontFamily = "var(--font-jura)"
+    }
+  }, [language])
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
