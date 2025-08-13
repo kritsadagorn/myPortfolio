@@ -40,7 +40,7 @@ export const projects = [
   {
     title: "Position Explorer Website",
     description:
-      "Full-stack e-commerce solution with React, Node.js, and MongoDB",
+      "A website that displays information about popular tools and job positions in Thailand, based on data from local job listing websites, using NLP with Named Entity Recognition to classify terms.",
     tech: ["React", "Node.js", "Express.js", "MySQL"],
     github: "https://github.com/kritsadagorn/FrontJob",
     demo: "https://positionexplorer.vercel.app",
