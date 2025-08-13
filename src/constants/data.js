@@ -24,7 +24,6 @@ import {
       { name: "Node.js", level: "Basic" },
       { name: "Python", level : "Basic" },
       { name: "PHP", level : "Basic" },
-      { name: "PHP", level : "Basic" },
       { name: "MySQL"},
       { name: "Prisma" },
       { name: "Git" },
