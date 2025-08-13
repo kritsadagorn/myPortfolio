@@ -106,7 +106,7 @@ export const certificates = [
     title:
       "Winner of Do School Project Competition – Biodiversity and Water Quality Assessment",
     description:
-      "Awarded by the National Electronics and Computer Technology Center (NECTEC), a member of the National Science and Technology Development Agency (NSTDA), to Mr. Kritsadagorn Punnapanich from the Faculty of Industrial Technology, for excellence in the project on biodiversity of aquatic animals and the use of species as indicators of water quality. The award was granted for winning the Do School project competition under the theme 'Exploring Biodiversity of Aquatic Animals or Microorganisms in Water Quality Indicators' on September 9, 2020.",
+      "Awarded to Mr. Kritsadagorn Punnapanich for winning the Do School competition on biodiversity of aquatic animals and using species as water quality indicators, held on September 9, 2020.",
     image: "https://img2.pic.in.th/pic/Screenshot-2025-08-14-013538.png",
     issuer:
       "National Electronics and Computer Technology Center (NECTEC), NSTDA",
@@ -116,7 +116,7 @@ export const certificates = [
     title:
       "Selected Participant – Do School Project Competition on Aquatic Biodiversity and Water Quality Assessment",
     description:
-      "Awarded by the National Electronics and Computer Technology Center (NECTEC), a member of the National Science and Technology Development Agency (NSTDA), to Mr. Kritsadagorn Punnapanich from the Faculty of Industrial Technology for his participation in the project on biodiversity of aquatic animals and the use of species as indicators of water quality. Selected to participate in the Do School project competition under the theme 'Exploring Biodiversity of Aquatic Animals or Microorganisms in Water Quality Indicators' on September 9, 2020.",
+      "Selected to participate in the Do School competition on biodiversity of aquatic animals and using species as water quality indicators, held on September 9, 2020.",
     image:
       "https://img5.pic.in.th/file/secure-sv1/Screenshot-2025-08-14-013552.png",
     issuer:
