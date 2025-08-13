@@ -21,16 +21,6 @@ import {
 const AboutSection = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const stats = [
-    { icon: Code, label: "Stack", value: "5+", color: "text-[#728559]" },
-    {
-      icon: Users,
-      label: "Freelance Work",
-      value: "2+",
-      color: "text-[#4169e1]",
-    },
-  ];
-
   const highlights = [
     "> Problem Solving",
     "> Communication",
@@ -198,7 +188,7 @@ const AboutSection = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="flex justify-center gap-4">
+      {/* <div className="flex justify-center gap-4">
         {stats.map((stat, index) => {
           const Icon = stat.icon;
           return (
@@ -218,7 +208,7 @@ const AboutSection = () => {
             </Card>
           );
         })}
-      </div>
+      </div> */}
 
       {/* Soft skills & Tech Stack */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
