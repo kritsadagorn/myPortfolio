@@ -130,7 +130,7 @@ const AboutSection = () => {
               <Mail className="w-4 h-4 text-[#728559]" />
               <div>
                 <p className="text-xs text-[#728559] font-medium">Email</p>
-                <p className="text-sm font-semibold">catsamotyba@gmail.com</p>
+                <p className="text-sm font-semibold">kritdevo3@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-3 text-[#4d4937] bg-[#cec7b5]/50 p-3 rounded-lg border border-[#948a75]/30 hover:border-[#728559]/50 transition-all duration-300">
