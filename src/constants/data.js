@@ -68,8 +68,7 @@ export const projects = [
     github: "https://github.com/kritsadagorn/Manotus",
     demo: "http://dev.somjaifreshfruit.com",
     isDeployed: true,
-    previewImage:
-      "https://img2.pic.in.th/pic/Screenshot-2025-08-14-012555.png",
+    previewImage: "https://img2.pic.in.th/pic/Screenshot-2025-08-14-012555.png",
   },
   {
     title: "Shabu Restaurant Ordering System",
@@ -102,6 +101,27 @@ export const certificates = [
     image: "https://img2.pic.in.th/pic/Scan_20250813-1.png",
     issuer: "Rajamangala University of Technology Lanna",
     date: "2024",
+  },
+  {
+    title:
+      "Winner of Do School Project Competition – Biodiversity and Water Quality Assessment",
+    description:
+      "Awarded by the National Electronics and Computer Technology Center (NECTEC), a member of the National Science and Technology Development Agency (NSTDA), to Mr. Kritsadagorn Punnapanich from the Faculty of Industrial Technology, for excellence in the project on biodiversity of aquatic animals and the use of species as indicators of water quality. The award was granted for winning the Do School project competition under the theme 'Exploring Biodiversity of Aquatic Animals or Microorganisms in Water Quality Indicators' on September 9, 2020.",
+    image: "https://img2.pic.in.th/pic/Screenshot-2025-08-14-013538.png",
+    issuer:
+      "National Electronics and Computer Technology Center (NECTEC), NSTDA",
+    date: "2020",
+  },
+  {
+    title:
+      "Selected Participant – Do School Project Competition on Aquatic Biodiversity and Water Quality Assessment",
+    description:
+      "Awarded by the National Electronics and Computer Technology Center (NECTEC), a member of the National Science and Technology Development Agency (NSTDA), to Mr. Kritsadagorn Punnapanich from the Faculty of Industrial Technology for his participation in the project on biodiversity of aquatic animals and the use of species as indicators of water quality. Selected to participate in the Do School project competition under the theme 'Exploring Biodiversity of Aquatic Animals or Microorganisms in Water Quality Indicators' on September 9, 2020.",
+    image:
+      "https://img5.pic.in.th/file/secure-sv1/Screenshot-2025-08-14-013552.png",
+    issuer:
+      "National Electronics and Computer Technology Center (NECTEC), NSTDA",
+    date: "2020",
   },
 ];
 
