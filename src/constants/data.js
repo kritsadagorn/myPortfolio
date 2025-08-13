@@ -76,11 +76,11 @@ export const projects = [
       "A parking reservation system with real-time slot status. Designed for efficient and user-friendly parking management.",
     tech: ["PHP", "MySQL"],
 
-    github: "https://github.com/kritsadagorn/Manotus",
+    github: "https://github.com/kritsadagorn/Shabu-php",
     demo: "",
     isDeployed: false,
     previewImage:
-      "https://img5.pic.in.th/file/secure-sv1/Screenshot-2025-08-11-172005.png",
+      "https://img5.pic.in.th/file/secure-sv1/Not-Deployed.png",
   },
 ];
 
