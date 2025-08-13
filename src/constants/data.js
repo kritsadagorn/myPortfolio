@@ -16,7 +16,7 @@ import {
   
   export const skills = {
     programming: [
-      { name: "HTML/CSS", level: "Basic" },
+      { name: "HTML/CSS", level: "Intermediate" },
       { name: "Javascript", level: "Intermediate" },
       { name: "React.js", level: "Intermediate" },
       { name: "Next.js", level: "Basic" },
