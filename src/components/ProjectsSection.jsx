@@ -64,7 +64,7 @@ const ProjectsSection = () => {
                       <span className="text-xs text-[#4d4937]">
                         {project.isDeployed
                           ? "Deployed"
-                          : "In Development"}
+                          : "Not Deployed"}
                       </span>
                     </div>
                   </div>

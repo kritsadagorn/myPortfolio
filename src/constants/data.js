@@ -16,23 +16,24 @@ import {
   
   export const skills = {
     programming: [
-      { name: "JavaScript", level: "Pro" },
-      { name: "TypeScript", level: "Learning" },
-      { name: "React", level: "Intermediate" },
-      { name: "Next.js", level: "Learning" },
+      { name: "HTML/CSS", level: "Basic" },
+      { name: "Javascript", level: "Intermediate" },
+      { name: "React.js", level: "Intermediate" },
+      { name: "Next.js", level: "Basic" },
       { name: "Node.js", level: "Basic" },
-      { name: "Python", level: "Basic" },
-      { name: "C++", level: "Learning" },
-      { name: "SQL", level: "Basic" },
-      { name: "MongoDB", level: "Basic" },
+      { name: "Python", level : "Basic" },
+      { name: "PHP" },
+      { name: "MySQL"},
+      { name: "Prisma" },
+      { name: "Git" },
     ],
     soft: [
       "Problem Solving",
       "Communication",
-      "Adaptability",
-      "Time Management",
       "Emotional Intelligence",
-      "Critical Thinking"
+      "Time Management",
+      "Stress Management",
+      "Creativity"
     ],
     languages: [
       { name: "Thai", level: "Native" },
@@ -46,32 +47,23 @@ import {
       description:
         "Full-stack e-commerce solution with React, Node.js, and MongoDB",
       tech: ["React", "Node.js", "Express.js", "MySQL"],
-      github: "www.github.com/kritsadagorn/FrontJob",
-      demo: "positionexplorer.vercel.app",
+      github: "https://github.com/kritsadagorn/FrontJob",
+      demo: "https://positionexplorer.vercel.app",
       isDeployed: true,
       previewImage:
-        "/placeholder.svg?height=300&width=500&text=E-Commerce+Platform+Preview"
+        "https://img2.pic.in.th/pic/Screenshot-2025-08-11-171949.png"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management with real-time updates",
-      tech: ["Next.js", "Socket.io", "PostgreSQL", "Prisma"],
-      github: "#",
-      demo: "#",
-      isDeployed: false,
+      title: "Fruit shop product listing website",
+      description: "E-commerce site for Somjai Fresh Fruit using Backblaze B2 for image storage, with an admin panel for managing categories and products.",
+      tech: ["Create React App", "Node.js", "Express.js", "MongoDB"],
+
+      github: "https://github.com/kritsadagorn/FruitStoreStructure",
+      demo: "http://dev.somjaifreshfruit.com",
+      isDeployed: true,
       previewImage:
-        "/placeholder.svg?height=300&width=500&text=Task+Management+App+Preview"
+        "https://img5.pic.in.th/file/secure-sv1/Screenshot-2025-08-11-172005.png"
     },
-    {
-      title: "AI Chat Interface",
-      description: "Modern chat interface with AI integration and animations",
-      tech: ["React", "OpenAI API", "GSAP", "Tailwind"],
-      github: "#",
-      demo: "#",
-      isDeployed: false,
-      previewImage:
-        "/placeholder.svg?height=300&width=500&text=AI+Chat+Interface+Preview"
-    }
   ]
   
   export const certificates = [
@@ -83,57 +75,21 @@ import {
       issuer: "Fortinet & RMUTL",
       date: "2025"
     },
-    {
-      title: "Full Stack Web Development",
-      description:
-        "Complete web development bootcamp covering frontend, backend, databases, and deployment",
-      image: "/placeholder.svg?height=200&width=350",
-      issuer: "Coursera",
-      date: "2022"
-    },
-    {
-      title: "UI/UX Design Fundamentals",
-      description:
-        "Principles of user interface design, user experience, and interactive prototyping",
-      image: "/placeholder.svg?height=200&width=350",
-      issuer: "Interaction Design Foundation",
-      date: "2022"
-    },
-    {
-      title: "TypeScript Masterclass",
-      description:
-        "Advanced TypeScript concepts, generics, utility types, and best practices",
-      image: "/placeholder.svg?height=200&width=350",
-      issuer: "Frontend Masters",
-      date: "2023"
-    }
   ]
   
   export const learningPath = [
     {
-      period: "2024 Q1",
-      title: "Advanced React Patterns",
+      period: "2019 - 2022",
+      title: "Vocational Certificate",
       description:
-        "Deep dive into React performance optimization and advanced patterns",
-      status: "completed"
+        "Pre-Engineering (Gifted Hands-on) Mechanically based GPA 3.37",
+      status: "Graduated"
     },
     {
-      period: "2024 Q2",
-      title: "System Design & Architecture",
+      period: "2022 - Present",
+      title: "Bachelor of Computer Enginering",
       description:
-        "Learning scalable system design and microservices architecture",
+        "Rajamangkala University Of Technology Lanna (UNDERGRAD) GPA 3.67",
       status: "in-progress"
     },
-    {
-      period: "2024 Q3",
-      title: "Machine Learning Fundamentals",
-      description: "Exploring ML algorithms and their practical applications",
-      status: "planned"
-    },
-    {
-      period: "2024 Q4",
-      title: "DevOps & Cloud Computing",
-      description: "AWS, Docker, Kubernetes, and CI/CD pipelines",
-      status: "planned"
-    }
   ]
