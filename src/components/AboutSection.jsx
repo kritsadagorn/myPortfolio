@@ -63,9 +63,9 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
         {/* Photo Section - Larger but with reduced margins */}
         <div className="flex justify-center lg:justify-start order-1 lg:order-1">
-          <div className="relative group">
+          <div className="relative">
             {/* Main Photo Container - Reduced margins */}
-            <div className="w-72 h-72 md:w-80 md:h-80 lg:ml-38 rounded-2xl overflow-hidden shadow-xl border-4 border-[#948a75] transform hover:scale-105 transition-all duration-500 bg-white">
+            <div className="w-72 h-72 md:w-80 md:h-80 lg:ml-38 rounded-2xl overflow-hidden shadow-xl border-4 border-[#948a75] transform hover:scale-105 transition-all duration-500 bg-white group">
               <img
                 src="https://img5.pic.in.th/file/secure-sv1/pic932adb7d7983744c.jpg"
                 alt="Kritsadgorn - Intern as a Fullstack Developer"
