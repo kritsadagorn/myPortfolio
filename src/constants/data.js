@@ -38,7 +38,7 @@ export const skills = {
 
 export const projects = [
   {
-    title: "Position Explorer Website",
+    title: "Position Explorer Website [In progress]",
     description:
       "A website that displays information about popular tools and job positions in Thailand, based on data from local job listing websites, using NLP with Named Entity Recognition to classify terms.",
     tech: ["React", "Node.js", "Express.js", "MySQL"],
