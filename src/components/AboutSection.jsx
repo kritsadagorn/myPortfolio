@@ -163,7 +163,7 @@ const AboutSection = () => {
               className="border-[#948a75] hover:bg-[#a4b292]/20 bg-transparent text-[#4d4937] shadow-md hover:shadow-lg transition-all duration-300"
             >
               <a
-                href="/PortKP.pdf"
+                href="/Resume-Kritsadagorn.pdf"
                 download
                 className="flex items-center gap-2"
               >
