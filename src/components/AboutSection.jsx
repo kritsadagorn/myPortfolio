@@ -87,7 +87,7 @@ const AboutSection = () => {
 
         {/* Information Section - Clean and minimal */}
         <div className="space-y-6 order-2 lg:order-2">
-          <div className="text-center lg:text-left space-y-3">
+          <div className="text-center space-y-3">
             <div className="space-y-2">
               <h1 className="text-3xl md:text-4xl font-bold text-[#12160b] tracking-tight">
                 Kritsadagorn Punnapanich
