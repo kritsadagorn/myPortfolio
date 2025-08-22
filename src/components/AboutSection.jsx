@@ -87,7 +87,7 @@ const AboutSection = () => {
 
         {/* Information Section - Clean and minimal */}
         <div className="space-y-6 order-2 lg:order-2">
-          <div className="text-center space-y-3">
+          <div className="text-center lg:text-left space-y-3">
             <div className="space-y-2">
               <h1 className="text-3xl md:text-4xl font-bold text-[#12160b] tracking-tight">
                 Kritsadagorn Punnapanich
@@ -99,12 +99,14 @@ const AboutSection = () => {
                 </p>
               </div>
             </div>
-            <p className="text-[#4d4937] text-base leading-relaxed max-w-xl">
-              Passionate software developer with expertise in modern web
-              technologies. I specialize in creating beautiful, efficient, and
-              scalable digital experiences that solve real-world problems and
-              delight users.
-            </p>
+            <div className="flex justify-center">
+              <p className="text-[#4d4937] text-base leading-relaxed max-w-xl">
+                Passionate software developer with expertise in modern web
+                technologies. I specialize in creating beautiful, efficient, and
+                scalable digital experiences that solve real-world problems and
+                delight users.
+              </p>
+            </div>
           </div>
 
           {/* Contact Info Grid - Minimal and clean */}
