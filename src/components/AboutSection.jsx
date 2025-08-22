@@ -30,7 +30,7 @@ const AboutSection = () => {
   ];
 
   const techStack = [
-    "HTML/CSS [Basic]",
+    "HTML/CSS [Intermediate]",
     "Javascript [Intermediate]",
     "React.js [Intermediate]",
     "Next.js [Basic]",
