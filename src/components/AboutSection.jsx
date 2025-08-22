@@ -58,7 +58,7 @@ const AboutSection = () => {
             <div className="w-72 h-72 md:w-80 md:h-80 lg:ml-38 rounded-2xl overflow-hidden shadow-xl border-4 border-[#948a75] transform hover:scale-105 transition-all duration-500 bg-white group">
               <img
                 src="https://img5.pic.in.th/file/secure-sv1/pic932adb7d7983744c.jpg"
-                alt="Kritsadgorn - Intern as a Fullstack Developer"
+                alt="Kritsadgorn - Intern as a Software Developer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               {/* Subtle overlay on hover */}
@@ -68,7 +68,7 @@ const AboutSection = () => {
                     Kritsadagorn Punnapanich
                   </p>
                   <p className="text-xs opacity-80">
-                    Intern as a Fullstack Developer
+                    Intern as a Software Developer
                   </p>
                 </div>
               </div>
@@ -95,12 +95,12 @@ const AboutSection = () => {
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Zap className="w-5 h-5 text-[#728559]" />
                 <p className="text-[#4d4937] text-lg font-medium">
-                  Intern as a Fullstack Developer
+                  Intern as a Software Developer
                 </p>
               </div>
             </div>
             <p className="text-[#4d4937] text-base leading-relaxed max-w-xl">
-              Passionate full-stack developer with expertise in modern web
+              Passionate software developer with expertise in modern web
               technologies. I specialize in creating beautiful, efficient, and
               scalable digital experiences that solve real-world problems and
               delight users.
