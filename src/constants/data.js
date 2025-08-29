@@ -66,7 +66,7 @@ export const projects = [
     tech: ["React.js", "Node.js", "Express.js", "MySQL"],
 
     github: "https://github.com/kritsadagorn/Manotus",
-    demo: "http://dev.somjaifreshfruit.com",
+    demo: "https://rmutlreserveparking.vercel.app",
     isDeployed: true,
     previewImage: "https://img2.pic.in.th/pic/Screenshot-2025-08-14-012555.png",
   },
