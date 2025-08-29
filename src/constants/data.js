@@ -21,6 +21,7 @@ export const skills = {
     { name: "MySQL" },
     { name: "Prisma" },
     { name: "Git" },
+    { name: "Postman" },
   ],
   soft: [
     "Problem Solving",
